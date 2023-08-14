@@ -1,29 +1,51 @@
+:root {
+  --orangecolor: rgb(255, 157, 0);
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.pic-and-logo {
+input {
+  outline: none;
+}
+
+.pic {
   background-image: url(sunset-photo.jpg);
   background-position: center;
-  background-size: auto 100vh;
+  background-size: 35vw 100vh;
   background-repeat: no-repeat;
-  width: 35vw;
   height: 100vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-part {
+  width: 35vw;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
 }
 
 .head-and-para {
   text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .logo {
-  height: 100px;
-  width: auto;
-  border-radius: 50px;
+  height: 120px;
+  width: 30%;
+  border-radius: 40px;
 }
 
 .all {
@@ -32,4 +54,65 @@
   display: flex;
 }
 
+.form {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  box-shadow: 5px 5px;
+  background-color: gainsboro;
+  margin-bottom: 10vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sign-up {
+  background-color: var(--orangecolor);
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border: 5px;
+  border-radius: 5px;
+  border-color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.do-it {
+  width: 100%;
+  margin-left: 10px;
+  font-size: 25px;
+  color: var(--orangecolor);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: auto;
+  margin: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+}
+
+.sign-up:hover {
+  color: var(--orangecolor);
+  border-color: var(--orangecolor);
+  background-color: white;
+}
+
+.error {
+  box-sizing: border-box;
+  border: 3px solid red;
+}

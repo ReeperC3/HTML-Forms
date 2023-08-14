@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Form</title>
 </head>
 <body>
 <div class="all">
   <div class="left">
-    <div class="pic-and-logo">
-      <img src="G0060310.JPG" alt="Logo" class="logo">
-      <div class="logo-text">ReeperC</div>
+    <div class="pic">
+      <div class="logo-part">
+        <img src="G0060310.JPG" alt="Logo" class="logo">
+        <div class="logo-text">ReeperC</div>
+      </div>
     </div>
   </div>
   <div class="right">
@@ -21,13 +24,43 @@
     </div>
     <div class="form">
       <div class="do-it">DO IT.</div>
-      <form action="post">
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" max="20">
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="first-name" max="20">
+      <br>
+      <form action="style.css" method="post">
+        <div class="row">
+        <div class="input">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" maxlength="20" required>
+        </div>
+        <div class="input">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" maxlength="20" required>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" maxlength="40" required>
+        </div>
+        <div class="input">
+          <label for="phone-number">Phone Number</label>
+          <input type="number" name="phone-number" id="phone-number" max="9999999999" required>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input">
+          <label for="password-1">Password</label>
+          <input type="password" name="password-1" id="password1" maxlength="10" required>
+        </div>
+        <div class="input"> 
+          <label for="password-2">Confirm Password</label>
+          <input type="password" name="password-2" id="password2" maxlength="10" required>
+          <div class="errorpassword2"></div>
+        </div>
+      </div>
+        <button type="submit" class="sign-up">Sign-up</button>
       </form>
     </div>
+    <div class="already">Already have an account? <a href="#">Sign-in</a></div>
   </div>
 </div>
   
