@@ -116,3 +116,8 @@ input {
   box-sizing: border-box;
   border: 3px solid red;
 }
+
+input:focus {
+  box-sizing: border-box;
+  border: 3px solid var(--orangecolor);
+}
